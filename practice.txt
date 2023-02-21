@@ -1,0 +1,46 @@
+function random(min, max) {
+        return Math.round(min + Math.random() * (max - min));
+      }
+
+      console.log(random(1, 6));
+
+      //primitive data types : string numbers booleans undefined null
+      var array = [1, 2, 3, 4, "jagdish", true];
+
+      //non primitive data types : object array date
+      var obj = {
+        name: "bts",
+        age: 23,
+        isMarried: false,
+      };
+
+      //conversion of no to string
+      var num1 = 7;
+      var stringNum1 = String(num1);
+
+      //conversion of string to no
+      var str1 = "7";
+      var numstr1 = Number(str1);
+
+      //booleans: true, false
+      //the values which on conversion to Boolean results in true -> truthy value
+      //the values which on conversion to Boolean results in false -> falsy value
+      console.log(Boolean(null));
+
+      //slice and splice
+      //slice is a piece of code
+
+      var array = [1, 2, 3, 4, 5, 6, 7];
+      var slicedArr = array.slice(3);
+      console.log(slicedArr);
+
+      //splice is (starting element,element to delete, anything to add)
+
+      var arr1 = [1, 2, 3, 4, 5, 6, 7];
+      var splicedArr = arr1.slice(3, 2, 5, 6);
+      console.log(splicedArr);
+
+      // push pop unshift shift
+      //if u have to push and unshift any element unless have to add it in front don't use unshift because it moves all the elements and takes time
+      var arr2 = [1, 2, 3, 4, 5, 6];
+      var a = arr2.push("7");
